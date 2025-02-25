@@ -1,0 +1,149 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+html {
+	font-size: calc(8px + 0.5vw);
+}
+
+:root {
+	--cor-p-bkgd: #2b1f70;
+	--cor-p-frgd: #ffffff;
+	--cor-s-bkgd: #6774c0;
+	--cor-s-frgd: #010512;
+	--cor-accent: #64b9ff7e;
+	--cor-interact: #43af98da;
+	--cor-border: #656597;
+	--cor-secA: #1fffff;
+	--cor-secB: #212144;
+	--cor-white: #ffffff;
+	--cor-gray: #b0b0b0;
+	--cor-black: #000000;
+}
+
+body {
+	background-color: var(--cor-p-bkgd);
+	color: var(--cor-p-frgd);
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+}
+
+.name {
+	background-color: var(--cor-secB);
+	border: 2px solid var(--cor-border);
+	position: absolute;
+	left: 67vw;
+	top: 2vh;
+	height: 8vh;
+	width: 28vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 2;
+	font-size: 2rem;
+	transform: skewx(-30deg);
+	justify-content: center;
+}
+
+.text {
+	transform: skewx(30deg);
+}
+
+.box {
+	background-color: var(--cor-s-bkgd);
+	height: 90vh;
+	width: 96vw;
+	top: calc(3vh - 2px);
+	position: absolute;
+	z-index: 1;
+	left: 2vw;
+}
+
+.image {
+	object-fit: cover;
+	overflow: hidden;
+	height: 82vh;
+	width: 40vw;
+	position: absolute;
+	top: 4vh;
+	left: 2vw;
+	box-sizing: border-box;
+	border: 2px solid var(--cor-secB);
+}
+
+.image img {
+	height: 100%;
+	width: 100%;	
+}
+
+.list {	
+	box-sizing: border-box;
+	background-color: #000000a0;
+	height: 78vh;
+	width: 50vw;
+	position: absolute;
+	top: 6vh;
+	left: 44vw;
+	padding: 4vh;
+}
+
+ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	overflow-wrap: break-word;
+	justify-content: space-between;
+	height: 100%;
+	overflow-y: auto;
+	list-style-position: inside;
+	list-style: none;
+}
+
+.topic {
+	background-color: var(--cor-accent);
+	text-align: center;
+}
+
+footer {
+	background-color: var(--cor-secB);
+	border: 2px solid var(--cor-border);
+	padding: 5px;
+	height: 5vh;
+	width: 30vw;
+	display: flex;
+	justify-content: center;
+	transform: skew(20deg) translateX(-50%);
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+}
+
+footer p {
+	transform: skew(-20deg);
+	overflow: hidden;
+}
+
+.github_icon {
+	height: 4vh;
+	
+}
+
+.nPage {
+	position: absolute;
+	z-index: 2;
+	top: 91vh;
+	left: 2vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--cor-secB);
+	color: var(--cor-secA);
+	border: 1vh solid var(--cor-black);
+	height: 5vh;
+	width: 7vh;
+}
+

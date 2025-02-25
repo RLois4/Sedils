@@ -1,0 +1,26 @@
+.button-box {
+	background-color: var(--cor-interact);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	bottom: .5vh;
+	right: 1vh;
+	height: 6vh;
+	width: 10vw;
+	border-radius: 50%;
+	font-size: 1.5rem;
+}
+
+.button {
+	text-decoration: none;
+	color: var(--cor-s-frgd);
+}
+
+.previous {
+	margin-right: 2vw;
+}
+
+.next {
+	margin-left: 2vw;
+}
